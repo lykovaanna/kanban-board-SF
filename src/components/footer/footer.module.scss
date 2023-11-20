@@ -1,0 +1,29 @@
+.footer {
+    height: var(--footer-height);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #ffffff;
+    background-color: #0067A3;
+    flex-shrink: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width:100%;
+    position: absolute;
+    margin-bottom: 0; 
+
+    span:last-of-type {
+      margin-left: 24px;
+    }
+    @media (max-width: 389.98px) {
+      display: none;
+    }
+    @media only screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    @media only screen and (min-width: 991.98px) {
+      display: flex;
+      position: absolute;
+   }
+  }

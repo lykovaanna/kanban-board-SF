@@ -1,0 +1,32 @@
+:root {
+  --header-height: 48px;
+  --footer-height: 56px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+    url('./fonts/roboto-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+.wrapper{
+  height:100vh;
+}

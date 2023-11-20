@@ -1,0 +1,25 @@
+html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+@media (max-width : 800px) {
+    .fluid {
+      float              : none !important;
+      width              : auto !important;
+      margin-left        : 0 !important;
+      margin-right       : 0 !important;
+      max-width          : 100% !important;
+      position           : static !important;
+      height             : auto !important;
+      -webkit-box-sizing : border-box;
+      -moz-box-sizing    : border-box;
+      box-sizing         : border-box;
+      & + .fluid {
+        margin-top : 1rem !important;
+      }
+    }
+    .fluid__none {
+      display : none !important;
+    }
+  }

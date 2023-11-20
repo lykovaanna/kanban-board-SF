@@ -1,0 +1,51 @@
+.board {
+        
+    display: flex;
+    > *:not(:first-of-type) {
+        margin-left: 24px; 
+        flex-wrap: wrap;
+    }
+
+     @media (max-width: 767.98px) {
+        display: block;
+        overflow: visible;
+        > *:not(:first-of-type) {
+            margin-left: 0px; 
+            flex-wrap: wrap;   
+        } 
+        > *:nth-child(2) {
+            display: none;
+        } 
+
+        > *:nth-child(3) {
+            display: none;
+        } 
+    }
+    
+    @media (min-width: 799.98px) {
+        display: flex;
+        overflow: visible;
+        > *:not(:first-of-type) {
+            margin-left: 10px; 
+            flex-wrap: wrap;
+            margin-top: 0px;
+        } 
+    }
+
+    @media only screen and (min-width: 991.98px) {
+        display: flex;
+        overflow: visible;
+        > *:not(:first-of-type) {
+            margin-left: 10px; 
+            flex-wrap: wrap; 
+            margin-top: 0px;
+        }   
+    }
+
+    @media only screen and (min-width: 1199.98px) {
+    display: flex;
+    justify-content: space-around;
+    }
+}
+  
+

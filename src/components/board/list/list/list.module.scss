@@ -1,0 +1,142 @@
+.list {
+    width: 282px;
+   
+    @media (max-width: 389.98px) {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0;
+        display:block ;
+        height: auto;
+        overflow: visible; 
+    }
+
+    @media only screen and (max-width: 767.98px) {    
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+        display:block ;
+        justify-content: space-around;
+        margin-top: 10px;
+        height: auto;
+        overflow: visible; 
+        position:unset;
+    }
+    
+.wrapper {
+    background-color: #EBECF0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 18px;
+    height: 44px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    background-color: #EBECF0;
+    font-family: Roboto, sans-serif;
+
+@media (max-width: 575.98px) {
+    position: relative; 
+  }
+
+@media (max-width: 767.98px) {
+    position: relative; 
+}
+
+}
+.footer {
+    padding: 12px 6px;
+}
+
+.body {
+    padding: 0 6px 0 6px;;
+}
+
+.button-add {
+    width: 110px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: #5E6C84;
+    font-family: Roboto, sans-serif;
+    font-size: 18px; 
+    background-color:  #EBECF0
+}
+
+.button-add:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.button-add-hidden {
+    display: none;
+}
+
+.card {
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 1px rgba($color: #000000, $alpha: 0.25);
+    margin-bottom: 1px;
+    min-height: 58px;
+    padding: 12px;
+    cursor: pointer;
+    color: black;
+
+&:not(:first-of-type){
+    margin-top: 8px;
+}
+>.button-remove {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    height: 16px;
+    width: 15px;
+    background-image: url('../../../shared/icons/icon-remove.svg');
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+}
+
+&:hover {
+    >.button-remove {
+       display: flex; 
+       cursor: pointer;
+    }
+  }
+}
+}
+
+.link{
+    text-decoration: none;
+    color:#000000;
+}
+
+.img{
+    height: 13px;
+     width: 12px;
+}
+
+.title {
+    margin: 0;
+}
+
+.selectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+

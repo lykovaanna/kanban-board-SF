@@ -1,0 +1,14 @@
+.button-remove {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  
+    &:hover {
+      background-color: #fff;
+    }
+  }
